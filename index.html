@@ -165,7 +165,7 @@
     const mapLight = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
     const mapDark  = 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
     
-    var map = L.map('map', { zoomControl: false }).setView([-15.6014, -56.0979], 13);
+    var map = L.map('map', { zoomControl: false }).setView([-15.591951, -56.098905], 13);
     var tileLayer = L.tileLayer(mapLight, { attribution: '© CartoDB' }).addTo(map);
 
     var customIcon = L.icon({
@@ -174,7 +174,7 @@
         iconAnchor: [19, 38], 
         popupAnchor: [0, -30]
     });
-    var marker = L.marker([-15.6014, -56.0979], {icon: customIcon}).addTo(map);
+    var marker = L.marker([-15.591951, -56.098905], {icon: customIcon}).addTo(map);
 
     // --- 3. LÓGICA DE TEMPO REAL ---
     const deviceSelect = document.getElementById('deviceSelect');
